@@ -1,0 +1,30 @@
+/*------- index ---------*/
+.feature_img_path{
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+}
+
+
+/*------- Add ---------*/
+
+
+/*------- Edit ---------*/
+.container_image_path{
+    margin-top: 1%;
+}
+.feature_img{
+    width: 100px;
+    height: auto;
+}
+.container_image_details{
+    margin-top: 1%;
+}
+.img_path{
+    width: 250px;
+    height: auto;
+}
+.garbage_can{
+    width: 10px;
+    padding-left: 20px;
+}

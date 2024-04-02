@@ -1,0 +1,135 @@
+/*------- Img---------*/
+.img {
+  display: block !important;
+  margin: auto;
+  width: 150px;
+  height: 120px !important;
+  object-position: center
+}
+
+.zoomable-image {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 499px) {
+  .zoomed-image {
+    width: auto !important; 
+    max-width: 900px;
+    height: auto !important;
+    max-height: 720px;
+    position: fixed;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 9999; 
+    background-color: rgba(0, 0, 0, 0.7); 
+  
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .zoomed-image {
+    width: auto !important; 
+    max-width: 300px;
+    height: auto !important;
+    max-height: 720px;
+    position: fixed;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 9999; 
+    background-color: rgba(0, 0, 0, 0.7); 
+  
+  }
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); 
+  z-index: 9998; 
+}
+/*------- Input file  ---------*/
+
+/* Custom Form Group */
+.custom-form-group {
+  margin-bottom: 1rem;
+}
+
+/* Custom Input Group */
+.custom-input-group {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  width: 100%;
+}
+
+/* Custom Margin bottom for Input Group */
+.custom-input-group.mb-3 {
+  margin-bottom: 1rem;
+}
+
+/* Custom File */
+.custom-file-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+/* Custom File Input */
+.custom-file-input {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: calc(1.5em + .75rem + 2px);
+  margin: 0;
+  opacity: 0;
+}
+.custom-file-input::-webkit-file-upload-button,
+
+/* Custom File Label */
+.custom-file-label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  height: calc(1.5em + .75rem);
+  padding: .375rem .75rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  -webkit-transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+/* Custom File Control */
+.custom-file-label::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  display: block;
+  height: calc(1.5em + .75rem);
+  padding: .375rem .75rem;
+  line-height: 1.5;
+  color: #495057;
+  content: "Browse";
+  background-color: #e9ecef;
+  border-left: inherit;
+  border-radius: 0 .25rem .25rem 0;
+}
+
+/*------- Edit ---------*/
